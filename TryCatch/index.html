@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try {
+        // Código que pode gerar um erro
+        let Série = "lindo";//sem erro pois agora o y foi definido, let é uma decleração de variável dentro do bloco
+        // let x = y + 5; // y não está definido 
+        var TheChosen = Séries + " e muito bom";//mudando let para var ele "saíra do padrão e não se prenderá ao bloco"
+    } catch (error) {
+        // Lidar com a exceção
+        console.error("Ocorreu um erro:", error.message);
+     
+    }
+    {
+        console.log("TheChosen", TheChosen);//erro
+    }
+    </script>
+</body>
+</html>
