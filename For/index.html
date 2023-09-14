@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Funcionários</title>
+</head>
+<body>
+    <h1>Lista de funcionários</h1>
+
+    <script>
+        // Array de nomes
+        var func = ["João", "Maria", "Carlos", "Ana", "Pedro"];
+
+        // Ordena o array de nomes em ordem alfabética usando um loop for
+        for (var i = 0; i < func.length; i++) {
+            for (var j = i + 1; j < func.length; j++) {
+                if (func[i].localeCompare(func[j]) > 0) {
+                    // Troca os elementos se estiverem fora de ordem
+                    var temp = func[i];
+                    func[i] = func[j];
+                    func[j] = temp;
+                }
+            }
+        }
+
+        // Obtém a lista HTML para adicionar os nomes
+        var lista = document.getElementById("listadefunc");
+
+        // Adiciona os nomes ordenados à lista HTML
+        for (var i = 0; i < func.length; i++) {
+            var item = document.createElement("li");
+            item.textContent = func[i];
+        
+        
+        }
+        console.log(func);//mostrar no backend
+
+    </script>
+</body>
+</html>
+
+
+
+
+
