@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista da Feira</title>
+</head>
+<body>
+    <h1>Lista da Feira</h1>
+
+    <script>
+        var frutas = ["maçã", "banana", "abacaxi", "laranja", "uva"];
+        var palavraChave = "uva";
+        var resultado;
+
+        switch (palavraChave) {
+   case "uva":
+        resultado = "Uva encontrada no banco de dados.";
+       break;
+        
+    case "maçã":
+        resultado = "Maçã encontrada no banco de dados.";
+        break;
+    case "banana":
+        resultado = "Banana encontrada no banco de dados.";
+        break;
+    case "laranja":
+        resultado = "Laranja encontrada no banco de dados.";
+        break;
+        case "abacaxi":
+        resultado = "Abacaxi encontrada no banco de dados.";
+        break;
+     default:
+        resultado = "A fruta não foi encontrada!";
+        }
+        console.log(resultado);
+    </script>
+</body>
+</html>
