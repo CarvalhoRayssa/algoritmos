@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pets</title>
+</head>
+<body>
+    <h1>Lista de Pets</h1>
+    <script>
+    // Array de nomes
+var pets = ["Golden", "Pastor Alemão", "Pincher", "Buldog", "Rottweiler"];
+
+// Função para verificar se a matriz está ordenada em ordem decrescente
+function isSorted(arr) {
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i - 1] < arr[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Loop para classificar a matriz em ordem decrescente usando o algoritmo da bolha (bubble sort)
+while (!isSorted(pets)) {
+    for (var i = 0; i < pets.length - 1; i++) {
+        if (pets[i] < pets[i + 1]) {
+            // Troca os elementos se estiverem fora de ordem
+            var temp = pets[i];
+            pets[i] = pets[i + 1];
+            pets[i + 1] = temp;
+        }
+    }
+}
+
+// Exibe a matriz de nomes ordenada em ordem decrescente
+console.log(pets);
+</script>
+</body>
+</html>
