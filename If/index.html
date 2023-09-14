@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inserçaõ de Novo Usuário</h1>
+    <script>
+        // Valor inserido pelo usuário (suponhamos que seja uma senha)
+var senhaInserida = "MinhaSenha123!";
+
+// Critérios de validação
+var comprimentoMinimo = 8;
+var contemCaracterEspecial = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\]/.test(senhaInserida);
+
+// Validando a senha
+if (senhaInserida.length >= comprimentoMinimo && contemCaracterEspecial) {
+    console.log("Senha válida. Acesso permitido.");//quando permitido
+} else {
+    console.log("Senha inválida. Acesso negado.");//quando negado
+}
+    </script>
+</body>
+</html>
